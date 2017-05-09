@@ -18,9 +18,12 @@
             <div ng-include="'nav.html'"></div>
         </div>
         <div ng-controller="businessC">
-            <ul>
+            <ul class="businessContent">
                 <li  ng-repeat="x in arr">
-                    {{x}}
+                    <img src="{{x.imgSrc}}" alt="">
+                    <p>{{x.name}}</p>
+                    <p>{{x.number}}</p>
+                    <p>{{x.address}}</p>
                 </li>
             </ul>
         </div>

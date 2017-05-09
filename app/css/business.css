@@ -1,0 +1,9 @@
+.businessContent{
+    width: 1180px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.businessContent li{
+    float: left;
+    width: 25%;
+}
