@@ -1,0 +1,132 @@
+.foot {
+    margin: 20px 0 0 0;
+    background: #fff;
+}
+.foot .top {
+     background: white;
+     height: 85px;
+     border: 1px solid #e4e4e4;
+ }
+.foot .top .v {
+    overflow: hidden;
+    padding-top: 15px;
+}
+.foot .top .item {
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-size: 26px;
+    color: #666;
+    line-height: 50px;
+}
+.foot .top .item img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+}
+.foot .center {
+    border-bottom: 1px solid #d3d3d3;
+    height: 246px;
+}
+.foot .center .v {
+    overflow: hidden;
+    height: 246px;
+}
+.foot .center .logo {
+    float: left;
+    margin: 50px 0 0 0;
+    width: 220px;
+    height: 125px;
+    line-height: 0;
+}
+.foot .center .logo img{
+    width: 100%;
+}
+.foot .center .qrcode {
+    float: left;
+    border-right: 1px solid #d3d3d3;
+    margin: 30px 0 0 80px;
+    position: relative;
+}
+.foot .center .qrcode .ele {
+    float: left;
+    width: 145px;
+    margin: 0 30px 0 0;
+}
+.foot .center .qrcode .text {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+.foot .center .qrcode .text .item {
+    float: left;
+    margin: 0 30px 0 0;
+    width: 145px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+.foot .center .foot-nav {
+    float: left;
+    width: 500px;
+    margin: 30px 0 0 29px;
+}
+.foot .center .foot-nav li {
+    float: left;
+    width: 25%;
+}
+
+.foot .center .foot-nav h1 {
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 25px 0;
+}
+.foot .center .foot-nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #666;
+}
+.foot .center .foot-nav h3 {
+    margin: 0 0 18px 0;
+}
+.foot .center .foot-nav h3 a {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+.foot .bottom {
+    height: 125px;
+    overflow: hidden;
+}
+.foot .bottom .ele1 {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin: 30px 0 10px;
+}
+.foot .bottom .ele2 {
+    text-align: center;
+    font-size: 14px;
+    color: #2784C7;
+}
+.foot .bottom .ele2 a{
+    color: #2784c7;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
