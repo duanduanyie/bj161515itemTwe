@@ -1,5 +1,9 @@
+var myApp = angular.module("myApp",["ngRoute","controllerModule"]);
 
-var myApp = angular.module("myApp",["controllerModule"]);
-
-
+myApp.config(function($routeProvider){
+    $routeProvider.when("/",{
+        templateUrl:"templateView/home.html",
+        controller:"homeC"
+    });
+})
 

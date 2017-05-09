@@ -2,13 +2,30 @@
 <html ng-app="myApp">
 <head>
     <title>易和生活港</title>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/nav.css">
     <script src="lib/jquery.min.js"></script>
     <script src="lib/angular.min.js"></script>
     <script src="js/controllers.js"></script>
+=======
+    <link rel="stylesheet" href="lib/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/foot.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-3.3.1.jquery.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+
+
+
+    <script src="js/controllors.js"></script>
+>>>>>>> 1b1aa31ec1b9ed76a93fe07aa0e8a09eac03b411
     <script src="js/app.js"></script>
+
 </head>
+<<<<<<< HEAD
 <body>
     <div ng-controller="mainC">
         <!--1.-->
@@ -41,5 +58,13 @@
         <!--右侧导航栏部分-->
         <div></div>
     </div>
+=======
+<body ng-controller="mainC">
+<div>
+    <div ng-include="'templateView/nav.html'"></div>
+    <ng-view></ng-view>
+    <div ng-include="'templateView/footer.html'"></div>
+</div>
+>>>>>>> 1b1aa31ec1b9ed76a93fe07aa0e8a09eac03b411
 </body>
 </html>
