@@ -37,21 +37,24 @@
         <div id="register_midR">
             <div id="register_midTop">注册</div>
             <div class="register_midIpt">
-                <input type="text" placeholder="请输入手机号">
+                <input type="text" placeholder="请输入手机号"id="register_ipt1">
+                <span class="correctS">✅</span>
             </div>
             <div class="register_midErr"></div>
             <div class="register_midIpt">
-                <input type="text" placeholder="请输入密码(6-20位号码字符)">
+                <input type="text" placeholder="请输入密码(6-20位号码字符)"id="register_ipt2">
+                <span class="correctS">✅</span>
             </div>
             <div class="register_midErr"></div>
             <div class="register_midIpt">
-                <input type="text" placeholder="请再次输入密码确认">
+                <input type="text" placeholder="请再次输入密码确认"id="register_ipt3">
+                <span class="correctS">✅</span>
             </div>
             <div class="register_midErr"></div>
             <div id="register_midCode">
-                <input type="text" placeholder="验证码">
-                <a href="###" class="register_midRand">随机验证码</a>
-                <a href="###">看不清，换一张</a>
+                <input type="text" placeholder="验证码"id="register_ipt4">
+                <a href="###" class="register_midRand randClick"></a>
+                <a href="###" class="randClick randClick2">看不清，换一张</a>
             </div>
             <div class="register_midErr"></div>
             <div class="register_midIpt getCode">
@@ -159,4 +162,6 @@
     <div class="bottom_end">易和生活&emsp;众享品质</div>
 </div>
 </body>
+<script src="../lib/jquery.min.js"></script>
+<script src="../js/register.js"></script>
 </html>

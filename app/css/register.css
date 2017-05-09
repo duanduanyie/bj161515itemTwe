@@ -86,6 +86,13 @@ a{
 }
 .register_midIpt{
     width:100%;
+    position: relative;
+}
+.correctS{
+    position: absolute;
+    right:8px;
+    top:2px;
+    display: none;
 }
 .register_midIpt input{
     width:100%;
@@ -107,19 +114,26 @@ a{
 }
 #register_midCode input{
     width:5.87rem;
-    padding:12px;
+    padding:0.5rem;
     box-sizing:border-box;
     outline: none;
     float: left;
     margin-right:1.2rem;
 }
 .register_midRand{
+    padding:0.3rem;
     box-sizing:border-box;
     border:1px solid #999;
     height:2.25rem;
     width:6rem;
     display: block;
     float: left;
+    letter-spacing:0.5rem;
+    text-align: center;
+}
+.randClick2{
+    display: inline-block;
+    line-height:200%;
 }
 .getCode{
     position: relative;
@@ -264,6 +278,7 @@ a{
 /*bottom*/
 #register_bottom{
     text-align: center;
+    font-size:0.9rem;
 }
 .bottom_start{
     margin: 2rem 0 0.8rem 0;
