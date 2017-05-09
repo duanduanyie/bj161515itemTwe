@@ -165,12 +165,21 @@ a{
     color: white;
     font-size:1rem;
     cursor: pointer;
+    border-radius: 10px;
 }
 .midBtn1{
     background-color: #ec6917;
 }
+.midBtn1:hover{
+    background-color:#ea5000;
+    transition-duration:1s;
+}
 .midBtn2{
     background-color: #008ce1;
+}
+.midBtn2:hover{
+    background-color:#005ce1;
+    transition-duration:1s;
 }
 #register_midFoot{
     position: relative;
@@ -265,6 +274,12 @@ a{
 }
 .foot-mid-text a{
     margin-bottom:1.1rem;
+}
+.foot-mid-text h3 a:hover{
+    color: #666;
+}
+.foot-mid-text a:hover{
+    color: #2684c7;
 }
 .foot-mid2 li{
     width:9rem;
