@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>易和生活港｜精品商家</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/business.css">
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/angular.min.js"></script>
+    <script src="../js/controllers.js"></script>
+    <script src="../js/app.js"></script>
+    <link rel="stylesheet" href="../lib/swiper.min.css">
+    <script src="../lib/swiper.min.js"></script>
+</head>
+<body>
+    <div ng-controller="mainC">
+        <div>
+            <div ng-include="'nav.html'"></div>
+        </div>
+        <div ng-controller="businessC">
+            <ul class="businessContent">
+                <li  ng-repeat="x in arr">
+                    <img src="{{x.imgSrc}}" alt="">
+                    <p>{{x.name}}</p>
+                    <p>{{x.number}}</p>
+                    <p>{{x.address}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

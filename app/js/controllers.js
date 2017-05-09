@@ -3,6 +3,50 @@ controllerModule.controller("mainC", function () {
 
 });
 controllerModule.controller("navC", function () {
-    var ni = document.getElementsByClassName("header");
-    console.log(ni);
+
+});
+controllerModule.controller("businessC", function ($scope) {
+    $scope.arr=[
+        {
+            imgSrc:"../images/navImg/business-1.png",
+            name:"李杰",
+            number:"13698200146",
+            address:"山西省五台县"
+        },{
+            imgSrc:"../images/navImg/business-1.png",
+            name:"李杰",
+            number:"13698200146",
+            address:"山西省五台县"
+        },{
+            imgSrc:"../images/navImg/business-1.png",
+            name:"李杰",
+            number:"13698200146",
+            address:"山西省五台县"
+        },{
+            imgSrc:"../images/navImg/business-1.png",
+            name:"李杰",
+            number:"13698200146",
+            address:"山西省五台县"
+        },{
+            imgSrc:"../images/navImg/business-1.png",
+            name:"李杰",
+            number:"13698200146",
+            address:"山西省五台县"
+        },{
+            imgSrc:"../images/navImg/business-1.png",
+            name:"李杰",
+            number:"13698200146",
+            address:"山西省五台县"
+        },{
+            imgSrc:"../images/navImg/business-1.png",
+            name:"李杰",
+            number:"13698200146",
+            address:"山西省五台县"
+        },{
+            imgSrc:"../images/navImg/business-1.png",
+            name:"李杰",
+            number:"13698200146",
+            address:"山西省五台县"
+        }
+    ];
 });
