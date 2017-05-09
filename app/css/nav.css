@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.content{
+    width: 100%;
+    background-color:#eeeeee;
+}
+.header{
+    width: 1180px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.headerLeft{
+    float: left;
+}
+.headerRight{
+    float: right;
+}
+.headerRight li{
+    float: left;
+
+}
