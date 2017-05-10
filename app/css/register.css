@@ -294,9 +294,11 @@ a{
 #register_bottom{
     text-align: center;
     font-size:0.9rem;
+    padding-bottom:3rem;
 }
 .bottom_start{
     margin: 2rem 0 0.8rem 0;
+    color: #999;
 }
 .bottom_end{
     color: #2784c7;
