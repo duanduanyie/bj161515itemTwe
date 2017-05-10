@@ -79,10 +79,15 @@ a{
     background-color: #ffffff;
     padding:1.25rem 1.87rem;
 }
-#register_midTop{
+.register_midTop{
     color: #999;
     font-size:1.5rem;
     margin-bottom:1.25rem;
+}
+#isExist{
+    font-size:1rem;
+    color:red;
+    margin-left:20px;
 }
 .register_midIpt{
     width:100%;

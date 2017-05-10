@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome back</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+</body>
+<script>
+    var user=JSON.parse(localStorage.users);
+    var user2=JSON.parse(user.user);
+    document.getElementById("h1").innerHTML="欢迎回来"+user2.username;
+</script>
+</html>

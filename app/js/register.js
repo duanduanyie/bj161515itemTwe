@@ -63,7 +63,36 @@ $(".register_midRand").html(rand(1001, 9999));
 $(".randClick").click(function () {
     $(".register_midRand").html(rand(1001, 9999));
 });
-
+//登录
+$(".midBtn1").click(function(){
+    if ($("#register_ipt1").val().length == 0 || $("#register_ipt2").val().length == 0 || $("#register_ipt2").val() != $("#register_ipt3").val()) {
+        return;
+    }
+    $.get({
+        type:"GET",
+        url:"../PHP/login.php",
+        data:{
+            username: $("#register_ipt1").val(),
+            password: $("#register_ipt2").val()
+        },
+        success:function(res){
+            $("#isExist").html("用户未注册");
+            console.log(res);
+            var userInfo=JSON.parse(res);
+            console.log(userInfo);
+            //缓存
+            if(userInfo.msg=="登录成功"){
+                var userJson=JSON.stringify(userInfo);
+                localStorage.users=userJson;
+                console.log(localStorage.users);
+                window.location.href="loginSuc.html";
+            }
+        },
+        fail:function(err){
+            console.log("错误信息"+err);
+        }
+    });
+});
 //Ajax请求数据库，唯一注册
 $(".midBtn2").click(function () {
     if ($("#register_ipt1").val().length == 0 || $("#register_ipt2").val().length == 0 || $("#register_ipt2").val() != $("#register_ipt3").val()) {
@@ -74,7 +103,7 @@ $(".midBtn2").click(function () {
     if ($("#register_ipt4").val()) {
         if ($("#register_ipt4").val() == $(".register_midRand").html()) {
             $(".register_midErr").eq(3).html("✅");
-            get();
+            get1();
         } else {
             $(".register_midErr").eq(3).html("看准了再输入");
         }
@@ -86,7 +115,7 @@ $(".midBtn2").click(function () {
     $("#register_ipt4").focus(function () {
         $(".register_midErr").eq(3).html("");
     });
-    function get() {
+    function get1() {
         $.get({
             type: "GET",
             url: "../PHP/register.php",
@@ -113,6 +142,7 @@ $(".midBtn2").click(function () {
             }
         });
     }
+    $(".register_midRand").html(rand(1001, 9999));
 
 });
 
