@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"id="html">
+<html lang="en"id="html"ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <title>会员注册</title>
     <!--<link rel="stylesheet" href="../lib/bootstrap.css">-->
     <link rel="stylesheet" href="../css/register.css">
+    <script src="../lib/angular.min.js"></script>
 </head>
 <body>
 <!--1-->
@@ -89,79 +90,13 @@
     </div>
 </div>
 <!--4-->
-<div id="register_foot">
-    <div id="register_foot-top">
-        <ul id="register_foot-topS">
-            <a href="###">
-                <li>
-                    <img src="../images/register/ensure.png">正品保障
-                </li>
-            </a>
-            <a href="###">
-                <li>
-                    <img src="../images/register/track.png">全程跟踪
-                </li>
-            </a>
-            <a href="###">
-                <li>
-                    <img src="../images/register/supervise.png">
-                    客户监督
-                </li>
-            </a>
-            <a href="###">
-                <li>
-                    <img src="../images/register/safe.png">售后无忧
-                </li>
-            </a>
-            <a href="###">
-                <li>
-                    <img src="../images/register/ontime.png">准时到达
-                </li>
-            </a>
-        </ul>
-    </div>
-    <div id="register_foot-mid">
-        <div id="register_foot-midS">
-            <a href="###" class="foot-mid">
-                <img src="../images/register/logo2.png">
-            </a>
-            <ul class="foot-mid foot-mid2">
-                <li class="foot-mid-li">
-                    <img src="../images/register/phone.png">
-                    APP下载
-                </li>
-                <li class="foot-mid-li">
-                    <img src="../images/register/wechat.png">
-                    官方微信
-                </li>
-            </ul>
-            <ul class="foot-mid foot-mid3">
-                <li class="foot-mid-li foot-mid-text">
-                    <h3><a href="###">关于易和</a></h3>
-                    <a href="###">新用户注册</a>
-                    <a href="###">支付方式</a>
-                </li>
-                <li class="foot-mid-li foot-mid-text">
-                    <h3><a href="###">关于易和</a></h3>
-                    <a href="###">验货与签收</a>
-                    <a href="###">退换货规则</a>
-                    <a href="###">配送方式</a>
-                </li>
-                <li class="foot-mid-li foot-mid-text">
-                    <h3><a href="###">关于易和</a></h3>
-                    <a href="###">公司简介</a>
-                    <a href="###">积分介绍</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!--5-->
-<div id="register_bottom">
-    <div class="bottom_start">版权所有 © 2016易和生活港 保留所有权利 | 鲁ICP备：16022180号-1</div>
-    <div class="bottom_end">易和生活&emsp;众享品质</div>
+<div>
+    <div ng-include="'footPub.html'"></div>
 </div>
 </body>
 <script src="../lib/jquery.min.js"></script>
 <script src="../js/register.js"></script>
+<script>
+    var app=angular.module("myApp",[]);
+</script>
 </html>

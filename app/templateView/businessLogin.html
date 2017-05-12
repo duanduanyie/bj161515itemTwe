@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>商家登录</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../lib/angular.min.js"></script>
+</head>
+<body>
+<div>
+    <!--top-->
+    <div id="bl_top">
+        <div id="bl_topS">
+            <div id="bl_top_left">
+                所在城市:
+                <a href="###">烟台</a>
+            </div>
+            <ul id="bl_top_right">
+                <li><a href="###">欢迎光临易和生活港</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--logo-->
+    <div id="bl_logo">
+        <div id="bl_logoS">
+            <a href="###"><img src="../images/register/logo.png"></a>
+            <div id="bl_logoBus">商家登录</div>
+        </div>
+    </div>
+    <!--mid-->
+    <div id="bl_mid">
+        <div id="bl_midS">
+            <img src="../images/register/busiLogin.png"id="bl_mid_left">
+            <div id="bl_mid_right">
+                <div id="bl_mid_right1">商家登录</div>
+                <div class="bl_midIpt">
+                    <input type="text"placeholder="请输入登录账号" class="bl_mid_ipt1 bl_mid_ipt">
+                    <span class="bl_Right"></span>
+                </div>
+                <div class="bl_Err"></div>
+                <div class="bl_midIpt">
+                    <input type="password"placeholder="请输入密码" class="bl_mid_ipt2 bl_mid_ipt">
+                    <span class="bl_Right"></span>
+                </div>
+                <div class="bl_Err"></div>
+                <div><input type="text"placeholder="验证码" class="bl_mid_ipt3"><a href="###"class="bl_code">验证码</a><a href="###"class="bl_vague">看不清，换一张</a></div>
+                <div class="bl_forget"><a href="###">忘记密码</a></div>
+                <div class="bl_mid_login">
+                    <button>登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--foot-->
+    <div>
+        <div ng-include="'footPub.html'"></div>
+    </div>
+
+</div>
+</body>
+<script>
+    var app=angular.module("myApp",[]);
+</script>
+</html>

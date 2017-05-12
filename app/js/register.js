@@ -65,9 +65,22 @@ $(".randClick").click(function () {
 });
 //登录
 $(".midBtn1").click(function(){
-    if ($("#register_ipt1").val().length == 0 || $("#register_ipt2").val().length == 0 || $("#register_ipt2").val() != $("#register_ipt3").val()) {
+    if ($("#register_ipt1").val().length == 0 || $("#register_ipt2").val().length == 0) {
         return;
     }
+    if ($("#register_ipt4").val()) {
+        if ($("#register_ipt4").val() == $(".register_midRand").html()) {
+            $(".register_midErr").eq(3).html("✅");
+            login();
+        } else {
+            $(".register_midErr").eq(3).html("看准了再输入");
+        }
+    }
+    else {
+        $(".register_midErr").eq(3).html("请输入验证码");
+    }
+});
+function login(){
     $.get({
         type:"GET",
         url:"../PHP/login.php",
@@ -92,7 +105,7 @@ $(".midBtn1").click(function(){
             console.log("错误信息"+err);
         }
     });
-});
+}
 //Ajax请求数据库，唯一注册
 $(".midBtn2").click(function () {
     if ($("#register_ipt1").val().length == 0 || $("#register_ipt2").val().length == 0 || $("#register_ipt2").val() != $("#register_ipt3").val()) {
