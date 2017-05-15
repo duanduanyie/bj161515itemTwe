@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>易和生活港｜积分商城</title>
+    <link rel="stylesheet" href="../css/navD.css">
+    <link rel="stylesheet" href="../css/foot.css">
+    <link rel="stylesheet" href="../css/business.css">
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/angular.min.js"></script>
+    <script src="../js/controllors.js"></script>
+    <script src="../lib/angular-route.min.js"></script>
+    <script src="../js/appD.js"></script>
+    <link rel="stylesheet" href="../lib/swiper.min.css">
+    <script src="../lib/swiper.min.js"></script>
+</head>
+<body>
+<div>
+    <div>
+        <div ng-include="'navD.html'"></div>
+    </div>
+    <div ng-controller="integralC">
+        <ul class="integralContent">
+            <li ng-repeat="value in integral">
+                <img src="{{value.imgSrc}}" alt="" style="margin-bottom: 15px">
+                <span>{{value.integral}}</span>
+                <span>{{value.price}}</span>
+               <div><button>兑换</button></div>
+            </li>
+        </ul>
+    </div>
+    <!--footer部分-->
+    <div ng-controller="footerC">
+        <div ng-include="'footerD.html'"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>易和生活港｜今日特价</title>
+    <link rel="stylesheet" href="../css/navD.css">
+    <link rel="stylesheet" href="../css/foot.css">
+    <link rel="stylesheet" href="../css/business.css">
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/angular.min.js"></script>
+    <script src="../js/controllors.js"></script>
+    <script src="../lib/angular-route.min.js"></script>
+    <script src="../js/appD.js"></script>
+    <link rel="stylesheet" href="../lib/swiper.min.css">
+    <script src="../lib/swiper.min.js"></script>
+</head>
+<body>
+<div>
+    <div>
+        <div ng-include="'navD.html'"></div>
+    </div>
+    <div ng-controller="specialC" class="specialContent">
+        <div class="specialContent1">
+            <div class="specialContent1_1">
+                <h2><span>限量</span><span>抢购</span></h2>
+                <p>每日精选12款特价商品，天天送不停</p>
+            </div>
+            <div class="specialContent1_2">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../images/navImg/special-1.png" alt="">
+                            <img src="../images/navImg/special-2.png" alt="">
+                            <img src="../images/navImg/special-3.png" alt="">
+                            <img src="../images/navImg/special-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/navImg/special-1.png" alt="">
+                            <img src="../images/navImg/special-2.png" alt="">
+                            <img src="../images/navImg/special-3.png" alt="">
+                            <img src="../images/navImg/special-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/navImg/special-1.png" alt="">
+                            <img src="../images/navImg/special-2.png" alt="">
+                            <img src="../images/navImg/special-3.png" alt="">
+                            <img src="../images/navImg/special-4.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="specialContent1_1">
+                <h2><span>今日</span><span>特价</span></h2>
+                <p>Commodity</p>
+            </div>
+        </div>
+        <ul class="specialContent2">
+            <li ng-repeat="value in special">
+                <img src="{{value.imgSrc}}" alt="">
+                <p>{{value.title}}</p>
+                <span>{{value.priceA}}</span><span>{{value.priceB}}</span>
+            </li>
+        </ul>
+    </div>
+    <!--footer部分-->
+    <div ng-controller="footerC">
+        <div ng-include="'footerD.html'"></div>
+    </div>
+</div>
+</body>
+</html>

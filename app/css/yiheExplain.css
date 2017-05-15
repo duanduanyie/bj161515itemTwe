@@ -1,0 +1,138 @@
+.explainContent{
+    width: 1180px;
+    margin: 0 auto;
+}
+.explainC{
+    overflow: hidden;
+}
+.explainCLeft{
+    width: 173px;
+   padding: 10px 0;
+    border:1px solid #d3d3d3;
+    float: left;
+}
+.explainCLeft h1{
+    line-height: 40px;
+    font-size: 16px;
+    margin: 0px 15px;
+    color: #333;
+}
+.explainCLeft h1 span{
+    float: right;
+    line-height: 40px;
+    color: #d3d3da;
+    font-weight: 100;
+}
+.explainCLeft h3 a{
+    display: block;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0px 15px;
+    color: #666;
+    text-decoration: none;
+}
+.explainCLeft h3 a:hover{
+    color: #ff6c00;
+    text-decoration: underline;
+}
+.explainCRight{
+    width: 980px;
+    float: right;
+}
+.explainCRight li{
+    display: none;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid #d3d3d3;
+    min-height: 600px;
+}
+.explainCRight li h2{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #666;
+    font-weight: normal;
+}
+.explainCRight1{
+height: 30px;
+text-align: center;
+margin: 10px 0 20px 0;
+}
+.explainCRight1 span{
+    height: 30px;
+    line-height: 30px;
+    margin: 0 60px;
+    color: #999;
+    font-size: 16px;
+}
+.explainCRight2{
+    width: 100%;
+    font-size: 15px;
+    color: #666;
+}
+.explainCRight2 a{
+    text-decoration: underline;
+    color: blue;
+}
+.explainCRight2 div img{
+    margin-top: 50px;
+    margin-left: 20px;
+    max-width: 80%;
+    border: 1px solid #d3d3d3;
+}
+.explainCRight2 div:nth-child(2) img{
+    display: block;
+    width: 390px;
+}
+.explainP{
+    font-size: 15px;
+    color: #666;
+    padding: 25px 0;
+}
+.explainClist1 span{
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    color: #666;
+    padding-left: 10px;
+}
+.explainClist1 img{
+    display: block;
+    width: 128px;
+    margin: 30px auto 30px;
+}
+.explainClist2{
+    font-size: 14px;
+    color: #666;
+}
+.explainClist2 p,.explainClist2 h3{
+    line-height: 30px;
+}
+.explainClist2 p{
+    text-indent: 20px;
+}
+.explainClist3 p ,.explainClist4 p ,.explainClist5 p{
+    padding: 20px 0;
+    text-indent: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #666;
+}
+.explainClist3 h3{
+    font-size: 14px;
+    color: #666;
+}
+.explainClist4 p{
+    font-size: 15px;
+    color: #666;
+    padding: 20px 0;
+}
+.explainClist5 div{
+    font-size: 10px;
+    line-height: 21px;
+    color: #666;
+    text-align: center;
+    padding: 40px 0;
+}
