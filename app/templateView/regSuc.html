@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册成功</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <a href="register.html">点击此处前往登录</a>
+</body>
+<script>
+    var user1=JSON.parse(localStorage.user);
+    console.log(user1);
+    document.getElementById("h1").innerHTML="恭喜您注册成功,用户名为："+user1.username;
+</script>
+</html>

@@ -79,10 +79,15 @@ a{
     background-color: #ffffff;
     padding:1.25rem 1.87rem;
 }
-#register_midTop{
+.register_midTop{
     color: #999;
     font-size:1.5rem;
     margin-bottom:1.25rem;
+}
+#isExist{
+    font-size:1rem;
+    color:red;
+    margin-left:20px;
 }
 .register_midIpt{
     width:100%;
@@ -165,12 +170,21 @@ a{
     color: white;
     font-size:1rem;
     cursor: pointer;
+    border-radius: 10px;
 }
 .midBtn1{
     background-color: #ec6917;
 }
+.midBtn1:hover{
+    background-color:#ea5000;
+    transition-duration:1s;
+}
 .midBtn2{
     background-color: #008ce1;
+}
+.midBtn2:hover{
+    background-color:#005ce1;
+    transition-duration:1s;
 }
 #register_midFoot{
     position: relative;
@@ -266,6 +280,12 @@ a{
 .foot-mid-text a{
     margin-bottom:1.1rem;
 }
+.foot-mid-text h3 a:hover{
+    color: #666;
+}
+.foot-mid-text a:hover{
+    color: #2684c7;
+}
 .foot-mid2 li{
     width:9rem;
     margin-right:2rem;
@@ -279,9 +299,11 @@ a{
 #register_bottom{
     text-align: center;
     font-size:0.9rem;
+    padding-bottom:3rem;
 }
 .bottom_start{
     margin: 2rem 0 0.8rem 0;
+    color: #999;
 }
 .bottom_end{
     color: #2784c7;
