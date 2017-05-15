@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>易和生活港｜欢迎页</title>
+    <style>
+        *{margin: 0;padding: 0}
+        .startPages{width: 100%;height: 33px;background-color: #eee}
+        .startPagesNav{width: 1180px;margin: 0 auto}
+        .pagesList{float: right;list-style: none}
+        .pagesList li{float: left;line-height: 33px}
+        .pagesList li a{padding: 0 10px;color:#666;font-size: 13px;text-decoration: none;border-right:1px solid #666}
+        .pagesList li a:hover{color:#ca7478;}
+        .startPagesLogo{width: 1180px;margin: 0 auto;overflow: hidden;}
+        .startPagesLogo1{float:left;padding: 20px;}
+        .startPagesLogo1 img{border-right: 1px solid #666;padding-right: 40px}
+        .startPagesLogo2{float: right;padding: 20px;}
+        .startPagesLogo2 a{line-height: 80px;color: #666;text-decoration: none;padding: 0 15px;border-right: 1px solid #666}
+        .startContent{background: url("../images/navImg/start-1.png") no-repeat center -100px;width: 100%;height:612px ;margin-top: 120px;border-bottom: 1px solid #666;}
+        .startContent h1{text-align: center;font-size: 40px;color: #fff;  height: 50px;  line-height: 50px; padding-top:100px;}
+        .startContent1{padding-top: 100px;width: 850px;margin: 0 auto}
+        .startContent1 div{font-size: 0;display: inline-block}
+        .startContent1 div input:nth-child(1){width: 380px;height:56px;outline: none;vertical-align: bottom}
+        .startContent1 div input:nth-child(2){width: 130px;height:56px;outline: none;vertical-align: bottom }
+        .startContent1 a{display: inline-block;width:170px;height: 56px;background-color:#EC6917;color: white;font-size: 22px;text-align: center;line-height: 56px;text-align: center;margin-left: 100px;text-decoration: none;border-radius: 8px;vertical-align: bottom}
+        .bottom{}
+        .ele1 {text-align: center; font-size: 14px; color: #999;  margin: 30px 0 10px;}
+        .ele2 {text-align: center;font-size: 14px; color: #2784C7;}
+        .ditu{width:100%; height: 600px;position: absolute; top: 150px;display: none;}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=YZ8bAXYNAevStRdxaYlbfWUwF8rwtNEC"></script>
+</head>
+<body>
+    <div class="startPages">
+        <div class="startPagesNav">
+            <ul class="pagesList">
+               <li><a href="###">欢迎光临易和生活港</a></li>
+                <li><a href="###">我是商家</a></li>
+                <li><a href="###" style="border: none;">400-100-0907</a></li>
+            </ul>
+        </div>
+        <div class="startPagesLogo">
+            <div class="startPagesLogo1">
+                <img src="../images/navImg/logo.png" alt="">
+            </div>
+            <div class="startPagesLogo2">
+                <a href="###">登录</a>
+                <a href="###" style="border: none;">注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="startContent">
+        <h1>易和生活，钟祥生活</h1>
+        <div class="startContent1">
+             <div><input type="text" placeholder="请输入您所在的城市" style="font-size: 18px;color: #666;padding-left: 10px" class="input1"> <input type="text" placeholder="北京" style="font-size: 18px;text-align: center" class="input2"> </div>
+            <a href="###">进入易和</a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="bottom">
+            <div class="ele1">版权所有 &copy; 2016易和生活港&emsp;保留所有权利&emsp;|&emsp;鲁ICP备：16022180号-1</div>
+            <div class="ele2">易和生活&emsp;众享品质</div>
+        </div>
+    </div>
+    <div id="allmap" class="ditu"></div>
+</body>
+</html>
+<script src="../lib/jquery.min.js"></script>
+<script>
+    var map = new BMap.Map("allmap");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+    var geoc = new BMap.Geocoder();
+
+    var province,city;
+    map.addEventListener("click", function(e){
+        var pt = e.point;
+        geoc.getLocation(pt, function(rs){
+            var addComp = rs.addressComponents;
+            province = addComp.province;
+            city = addComp.city;
+            alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+            console.log(province,city);
+            $(".input2").val(province+city);
+            $(".ditu").hide();
+        });
+    });
+
+    $(".input1").click(function () {
+        $(".ditu").show();
+    })
+</script>

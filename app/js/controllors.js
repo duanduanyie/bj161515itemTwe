@@ -40,7 +40,70 @@ controllersModule.controller("homeC", function ($scope) {
 });
 
 
+//精品商家
+controllersModule.controller("businessC", function ($scope) {
+    $scope.business = [
+        {
+            imgSrc1:"../images/navImg/business-1.png",
+            name:"李杰",
+            inpone:"18699563265",
+            address:"山西省五台县"
+        },{
+            imgSrc1:"../images/navImg/business-1.png",
+            name:"李杰",
+            inpone:"18699563265",
+            address:"山西省五台县"
+        },{
+            imgSrc1:"../images/navImg/business-1.png",
+            name:"李杰",
+            inpone:"18699563265",
+            address:"山西省五台县"
+        },{
+            imgSrc1:"../images/navImg/business-1.png",
+            name:"李杰",
+            inpone:"18699563265",
+            address:"山西省五台县"
+        },{
+            imgSrc1:"../images/navImg/business-1.png",
+            name:"李杰",
+            inpone:"18699563265",
+            address:"山西省五台县"
+        },{
+            imgSrc1:"../images/navImg/business-1.png",
+            name:"李杰",
+            inpone:"18699563265",
+            address:"山西省五台县"
+        },{
+            imgSrc1:"../images/navImg/business-1.png",
+            name:"李杰",
+            inpone:"18699563265",
+            address:"山西省五台县"
+        },{
+            imgSrc1:"../images/navImg/business-1.png",
+            name:"李杰",
+            inpone:"18699563265",
+            address:"山西省五台县"
+        },
+    ]
 
+});
+//今日特价
+controllersModule.controller("specialC", function ($scope) {
+    $scope.special=[{imgSrc:"../images/navImg/special-5.png",title:"自家礼包送亲人，送朋友的不二选择",priceB:"￥20.0",priceA:"￥11.8"},{imgSrc:"../images/navImg/special-6.png",title:"自家礼包送亲人，送朋友的不二选择",priceB:"￥20.0",priceA:"￥11.8"},{imgSrc:"../images/navImg/special-7.png",title:"自家礼包送亲人，送朋友的不二选择",priceB:"￥20.0",priceA:"￥11.8"},{imgSrc:"../images/navImg/special-8.png",title:"自家礼包送亲人，送朋友的不二选择",priceB:"￥20.0",priceA:"￥11.8"},{imgSrc:"../images/navImg/special-9.png",title:"自家礼包送亲人，送朋友的不二选择",priceB:"￥20.0",priceA:"￥11.8"},{imgSrc:"../images/navImg/special-5.png",title:"自家礼包送亲人，送朋友的不二选择",priceB:"￥20.0",priceA:"￥11.8"},{imgSrc:"../images/navImg/special-6.png",title:"自家礼包送亲人，送朋友的不二选择",priceB:"￥20.0",priceA:"￥11.8"},{imgSrc:"../images/navImg/special-7.png",title:"自家礼包送亲人，送朋友的不二选择",priceB:"￥20.0",priceA:"￥11.8"},{imgSrc:"../images/navImg/special-8.png",title:"自家礼包送亲人，送朋友的不二选择",priceB:"￥20.0",priceA:"￥11.8"},{imgSrc:"../images/navImg/special-9.png",title:"自家礼包送亲人，送朋友的不二选择",priceB:"￥20.0",priceA:"￥11.8"}];
+
+});
+//积分商城
+controllersModule.controller("integralC", function ($scope) {
+    $scope.integral = [{imgSrc:"../images/navImg/integral-1.png",title:"自家礼包送亲人，送朋友的不二选择",integral:"积分：50",price:"￥20.0"},{imgSrc:"../images/navImg/integral-1.png",title:"自家礼包送亲人，送朋友的不二选择",integral:"积分：50",price:"￥20.0"},{imgSrc:"../images/navImg/integral-1.png",title:"自家礼包送亲人，送朋友的不二选择",integral:"积分：50",price:"￥20.0"},{imgSrc:"../images/navImg/integral-1.png",title:"自家礼包送亲人，送朋友的不二选择",integral:"积分：50",price:"￥20.0"},{imgSrc:"../images/navImg/integral-1.png",title:"自家礼包送亲人，送朋友的不二选择",integral:"积分：50",price:"￥20.0"},{imgSrc:"../images/navImg/integral-1.png",title:"自家礼包送亲人，送朋友的不二选择",integral:"积分：50",price:"￥20.0"},{imgSrc:"../images/navImg/integral-1.png",title:"自家礼包送亲人，送朋友的不二选择",integral:"积分：50",price:"￥20.0"},{imgSrc:"../images/navImg/integral-1.png",title:"自家礼包送亲人，送朋友的不二选择",integral:"积分：50",price:"￥20.0"},{imgSrc:"../images/navImg/integral-1.png",title:"自家礼包送亲人，送朋友的不二选择",integral:"积分：50",price:"￥20.0"},{imgSrc:"../images/navImg/integral-1.png",title:"自家礼包送亲人，送朋友的不二选择",integral:"积分：50",price:"￥20.0"}
+    ]
+
+});
+
+//footerD控制器
+controllersModule.controller("footerC", function ($scope) {
+    var pp = document.querySelectorAll(".foot-nav a");
+    console.log(pp)
+});
 
 
 
