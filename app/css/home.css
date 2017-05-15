@@ -226,6 +226,67 @@
     margin: 0 auto 30px;
 }
 
+/*侧边栏css*/
+.sidebar{
+    display: none;
+    position: fixed;
+    left: 50%;
+    margin-left: 610px;
+    top: 30px;
+    width: 50px;
+    z-index: 10000;
+    border: solid 1px #E0E0E0;
+}
+.sidebar li{
+    background: #fff;
+}
+.sidebar li a{
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: #666666;
+    margin: 0 5px;
+    border-top: solid 1px #E0E0E0;
+}
+.sidebar li a span{
+    color: #018CDF;
+}
+.sidebar li:first-child a{
+    border-top: solid 1px #fff;
+}
+
+.sidebar li:hover{
+    background: #008CE1;
+}
+.sidebar li:hover a{
+    color: #FFFFFD;
+    border-top: solid 1px #008CE1;
+}
+.sidebar li:hover span{
+    color: #FFFFFD;
+}
+
+.bottom img{
+    margin-left: -5px;
+}
+.bottom li:first-child a{
+    border-top: solid 1px #E0E0E0;
+}
+.bottom li:hover{
+    background: #fff;
+}
+.bottom li:hover a{
+    border-top: solid 1px #fff;
+}
+.bottom li:hover span{
+    color: #666666;
+}
+.bottom li a span{
+    color: #666666;
+}
+
 
 
 

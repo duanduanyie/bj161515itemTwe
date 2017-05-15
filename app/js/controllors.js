@@ -3,27 +3,9 @@ var controllersModule = angular.module("controllerModule", []);
 controllersModule.controller("mainC", function () {
 
 });
-controllersModule.controller("navC", function () {
 
-
-});
 
 controllersModule.controller("homeC", function ($scope) {
-
-    (function(list){
-        $(".item",list).mouseover(function(){
-            var _t = $(this);
-            var _p = _t.parent();
-            var _l = _t.position().left;
-            $(".curr",_p).animate({"left":_l+"px"},200);
-            var _i = _t.index();
-            var ps = _t.parents("div.marks");
-            var currView = ps.next();
-            $("ul",currView).eq(_i).addClass("active");
-            $("ul",currView).eq(_i).siblings().removeClass("active");
-        });
-    }($(".small-nav")));
-
     $scope.car1 = ["images/home-page/decorate-1-1.png","images/home-page/decorate-1-2.png","images/home-page/decorate-1-3.png"]
     $scope.car2 = ["images/home-page/decorate-1-4.png","images/home-page/decorate-1-5.png","images/home-page/decorate-1-6.png"]
 
