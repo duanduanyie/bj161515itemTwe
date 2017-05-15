@@ -7,12 +7,14 @@ $(".onlineService").mouseout(function () {
 });
 //图片轮播部分
 var mySwiper = new Swiper ('.swiper-container', {
-    autoplay: 1000,
+    autoplay: 2000,
     loop : true,
     speed:1000,
     autoplayDisableOnInteraction : false,
     pagination : '.swiper-pagination',
     paginationClickable :true,
+    nextButton: '.swiper-button-next',
+    prevButton:'.swiper-button-prev',
 })
 //一二级菜单随便切
 $(".carouselNav_list").mouseover(function () {
