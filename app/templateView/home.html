@@ -478,21 +478,21 @@
     <div class="sidebar">
         <ul>
             <li>
-                <a href="#cla1" onclick="huadong($(this))"><span>1&nbsp&nbspF</span>汽车</a>
+                <a href1="#cla1" onclick="huadong($(this))"><span>1&nbsp&nbspF</span>汽车</a>
             </li>
             <li>
-                <a href="#cla2" onclick="huadong($(this))"><span>2&nbsp&nbspF</span>酒店</a>
+                <a href1="#cla2" onclick="huadong($(this))"><span>2&nbsp&nbspF</span>酒店</a>
             </li>
             <li>
-                <a href="#cla3" onclick="huadong($(this))"><span>3&nbsp&nbspF</span>服装</a>
+                <a href1="#cla3" onclick="huadong($(this))"><span>3&nbsp&nbspF</span>服装</a>
             </li>
             <li>
-                <a href="#cla4" onclick="huadong($(this))"><span>4&nbsp&nbspF</span>建材</a>
+                <a href1="#cla4" onclick="huadong($(this))"><span>4&nbsp&nbspF</span>建材</a>
             </li>
         </ul>
         <ul class="bottom">
             <li>
-                <a href="#top" onclick="huadong($(this))">
+                <a href1="#top" onclick="huadong($(this))">
                     <img src="images/home-page/cb_01.jpg" alt="">
                     <span>顶部</span>
                 </a>
@@ -658,7 +658,7 @@
     });
 
     function huadong(obj) {
-        var href = $(obj).attr("href");
+        var href = $(obj).attr("href1");
         var pos = $(href).offset().top;
         curCss(obj);
         $("html,body").stop().animate({ scrollTop: pos }, 800);
