@@ -2,7 +2,6 @@
  * Created by lanou3g on 17/5/9.
  */
 //正则验证
-$("#register_topRes").html("会员注册");
 $("#register_ipt1").blur(function(){
     var reg = /^1[3578][0-9]{9}$/g;
     var result = reg.test($("#register_ipt1").val());
