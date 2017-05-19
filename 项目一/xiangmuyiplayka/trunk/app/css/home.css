@@ -1,0 +1,244 @@
+html,body{
+    font-size: 20px;
+}
+#nav{
+    height:95px;
+    line-height: 95px;
+    text-align: center;
+    position: relative;
+}
+#nav h2{
+    display: inline-block;
+    color: rgb(217,42,42);
+    font-size:1.8rem;
+}
+#nav img{
+    position: absolute;
+    left:30px;
+    top:35px;
+}
+/*mid1*/
+#box{
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    padding:10px 0;
+    background-color: rgb(226,226,226);
+}
+#mid1{
+    width:400%;
+}
+#mid1 img{
+    width:25%;
+    float: left;
+}
+/*binWrap*/
+#binWrap{
+    padding:10px;
+    position: relative;
+}
+.binTiao{
+    width:100%;
+    height:15px;
+    background-color: #e2e2e2;
+}
+#binWrap2,#binWrap3,#binWrap4,#binWrap5{
+    padding:10px;
+    position: relative;
+}
+#mid2{
+    font-size:2.12rem;
+    background-color: rgb(244,98,89);
+    width:49.3%;
+    border-radius: 40px;
+    padding:15px 0;
+    text-align: center;
+    position: relative;
+    margin:15px 0 0 20px;
+    color: white;
+    letter-spacing:3px;
+}
+#mid2 img{
+    height:90%;
+    position: absolute;
+    left:3px;
+    top:3px;
+}
+#mid3{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top:15px;
+    text-align: center;
+}
+#mid3 img{
+    width:70%;
+}
+#mid3 span{
+    color:rgb(194,194,194);
+}
+#mid4,#mid5{
+    width:100%;
+    overflow: hidden;
+    line-height: 1.8rem;
+    padding:15px 10px;
+    box-sizing:border-box;
+    font-size: 1.5rem;
+}
+#mid4{
+    border-bottom:1px solid rgb(221,221,221);
+}
+#mid4Img1,#mid5Img1{
+    float: left;
+    width:8%;
+    margin-right:1.5rem;
+}
+#mid4Div1,#mid5Div1{
+    float: left;
+}
+#mid4 h3,#mid5 h3{
+    display: inline-block;
+}
+#binA1{
+    color: rgb(244,98,89);
+    text-decoration: none;
+    position: absolute;
+    bottom:0px;
+    right:5px;
+}
+#binMid6,#binWrap3-1,#binWrap4-1{
+    width:100%;
+    position: absolute;
+    top:1.5rem;
+    left:1.5rem;
+}
+#binMid6 h2,#binWrap3-1 h2,#binWrap4-1 h2{
+    display: inline-block;
+    position: absolute;
+    top:20px;
+}
+#binMid6 img,#binWrap3-1 img,#binWrap4-1 img{
+    width:8%;
+}
+#binSpan1,#binSpan2,#binSpan3{
+    margin-left:5%;
+ }
+#binMid7,#binWrap3-2,#binWrap4-2{
+    width:100%;
+    margin-top:4rem;
+}
+#binMid7 img,#binWrap3-2 img,#binWrap4-2 img{
+    width:100%;
+}
+#binMid8,#binMid9,#binWrap3-3,#binWrap3-4,#binWrap4-3,#binWrap4-4{
+    width:100%;
+    padding:15px 0;
+}
+#binMid8,#binWrap3-3,#binWrap4-3{
+    border-bottom:1px solid rgb(221,221,221);
+}
+#binMid8 img,#binMid9 img,#binWrap3-3 img,#binWrap3-4 img,#binWrap4-3 img,#binWrap4-4 img{
+    width:8%;
+    vertical-align: middle;
+}
+#binMore,#binWrap3-5,#binWrap4-5{
+    width:100%;
+    background-color: rgb(254,119,111);
+    padding:15px 0;
+    color: white;
+    text-align: center;
+    font-size:1.3rem;
+}
+/*binWrap5*/
+#binWrap5{
+    margin-bottom: 100px;
+}
+#binWrap5 a{
+    position: inherit;
+}
+#binWrap5S{
+    width:100%;
+    color:gray;
+}
+#binWrap5-2,#binWrap5-3,#binWrap5-4,#binWrap5-5{
+    width:49%;
+    display: inline-block;
+}
+.binWrap5-F{
+    position: relative;
+    width:100%;
+}
+.binWrap5-F img{
+    width:100%;
+}
+.binWrap5-S{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    background-color:rgba(0,0,0,.7);
+    color: white;
+    padding-left:20px;
+    box-sizing: border-box;
+}
+#binWrap5-1 h2{
+    display: inline-block;
+}
+#binWrap5-1 img{
+    vertical-align: bottom;
+}
+#binWrap5-1{
+    margin-bottom:10px;
+}
+
+@media screen and (max-width:768px){
+    html,body{
+         font-size:5px;
+     }
+    #mid2{
+        font-size: 0.9rem;
+        padding:10px 0;
+    }
+    #mid4Img1,#mid5Img1,#binMid6 img,#binMid8 img,#binMid9 img,#binWrap3-1 img,#binWrap3-3 img,#binWrap3-4 img,#binWrap4-1 img,#binWrap4-3 img,#binWrap4-4 img{
+        width:19%;
+    }
+    #mid3{
+        font-size:0.7rem;
+    }
+    #mid4,#mid5{
+        font-size:1rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    html,body{
+        font-size:18px;
+    }
+
+}
+@media screen and (min-width:992px) {
+    html,body{
+        font-size:25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

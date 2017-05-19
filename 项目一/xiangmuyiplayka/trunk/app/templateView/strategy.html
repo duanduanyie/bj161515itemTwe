@@ -1,0 +1,24 @@
+<div class="giftNav">
+    <img src="img/myImg/gift-1.png" alt="">
+    <p>我的收藏</p>
+</div>
+<div class="strContent">
+    <ul class="strContent1">
+        <li>视频
+            <div></div>
+        </li>
+        <li><a href="#!raiders" style="color:black;">攻略</a>
+            <div></div>
+        </li>
+    </ul>
+    <ul class="strContent2">
+        <li ng-repeat="value in strategy" ng-click="touchS($index)" class="li">
+            <p>{{value.content}}</p>
+             <em>{{value.time}}</em>
+            <div>
+                <img src="img/myImg/strategy-1.png" alt="">
+            </div>
+            <a href="" class="strA" ng-click="clickS($index)">取消收藏</a>
+        </li>
+    </ul>
+</div>

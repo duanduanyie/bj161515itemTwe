@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Title</title>
+    <script src="../lib/jquery.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #loginWrap {
+            overflow: hidden;
+        }
+
+        #loginNav {
+            width: 100%;
+            padding: 15px 0;
+            color: rgb(233, 167, 167);
+            text-align: center;
+            position: relative;
+        }
+
+        #loginNav span, #loginNav a {
+            color: rgb(217, 42, 42);
+        }
+
+        #loginNav span {
+            font-size: 18px;
+        }
+
+        .loginNav-a2 {
+            font-size: 14px;
+            position: absolute;
+            right: 15px;
+            top: 18px;
+        }
+
+        #loginNav img {
+            vertical-align: bottom;
+            position: absolute;
+            left: 20px;
+        }
+
+        #loginBac {
+            background: url("../img/myImg/D2.png") no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            padding-bottom: 10rem;
+        }
+
+        #loginBac-img {
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        #loginBac-img img {
+            width: 30%;
+        }
+
+        .loginBac-ipt input {
+            background-color: rgba(255, 255, 255, .3);
+            display: block;
+            outline: none;
+            border: none;
+            padding: 10px 15px;
+            margin: 10px auto;
+            border-radius: 10px;
+            width: 80%;
+            box-sizing: border-box;
+            letter-spacing: 3px;
+            font-size: 1rem;
+        }
+
+        .loginBac-ipt input::-webkit-input-placeholder {
+            color: white;
+        }
+
+        .loginBac-ipt {
+            width: 100%;
+        }
+
+        #login-ipt1, #login-ipt2 {
+            color: white;
+        }
+
+        .loginBac-ipt button {
+            width: 80%;
+            background-color: white;
+            color: rgb(219, 71, 85);
+            border: none;
+            outline: none;
+            padding: 15px 0;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        .login-forget {
+            width: 80%;
+            text-align: right;
+            margin: 20px auto;
+        }
+
+        .login-forget a {
+            text-decoration: underline;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="loginWrap">
+    <div id="loginNav">
+        <a href="###"><img src="../img/myImg/D3.png"></a>
+        <span>玩咖用户登录</span>
+        <a href="###" class="loginNav-a2">注册</a>
+    </div>
+    <div id="loginBac">
+        <div id="loginBac-img"><img src="../img/myImg/D1.png"></div>
+        <p id="login-p1"></p>
+        <div class="loginBac-ipt">
+            <input type="text" id="login-ipt1" placeholder="您的账号(手机号)">
+        </div>
+        <div class="loginBac-ipt">
+                <input type="text" placeholder="您的玩咖账号密码" id="login-ipt2">
+        </div>
+        <div class="loginBac-ipt">
+            <button id="login-btn">登录</button>
+        </div>
+        <div class="login-forget">
+            <a href="###">忘记密码</a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../lib/my-Login.js"></script>
+</html>

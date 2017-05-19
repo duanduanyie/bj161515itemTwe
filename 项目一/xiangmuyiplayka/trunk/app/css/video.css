@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size:20px;
+}
+a{
+    text-decoration: none;
+    position: inherit;
+}
+#videoNav{
+    height:4rem;
+    line-height: 4.5rem;
+    text-align: center;
+    position: relative;
+}
+#videoNav img{
+    position: absolute;
+    left:1.5rem;
+    top:1.75rem;
+    width: 1.5rem;
+    height: 1.25rem;
+}
+#videoNav h1{
+    display: inline-block;
+    color: rgb(217,42,42);
+    font-size: 1.7rem;
+}
+/*图片轮播部分*/
+#videoMid{
+    width: 100%;
+    border-top:10px solid rgb(226,226,226);
+    border-bottom:10px solid rgb(226,226,226);
+    overflow: hidden;
+}
+#vBox{
+    width: 400%;
+    transition: all 2s;
+}
+#vBox img{
+    width: 25%;
+    float: left;
+}
+/*视频专区*/
+#videoContent{
+    width: 100%;
+    padding-bottom: 5rem;
+}
+#videoList{
+    padding: 1rem;
+}
+#logoR{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: rgb(255,101,92);
+    display: inline-block;
+    vertical-align: middle;
+}
+#list{
+    margin-top: 1rem;
+}
+#logoR img{
+    width: 1rem;
+    margin: 0.5rem;
+}
+#videoLogo p{
+    display: inline-block;
+    font-size: 2rem;
+    vertical-align: middle;
+    color: rgb(126,126,126);
+    margin-left: 0.65rem;
+}
+#list{
+    display: flex;
+    justify-content: space-around;
+}
+#list div{
+    width: 25%;
+    text-align: center;
+    display: block;
+}
+#list div a{
+    position: inherit;
+    width:100%;
+    text-decoration: none;
+    color: rgb(133,133,133);
+    text-align: center;
+}
+#list div a img{
+    width: 80%;
+}
+#list div a p{
+    font-size: 1.4rem;
+}
+#heng{
+    width: 100%;
+    height:1.333rem ;
+    background-color:rgb(226,226,226) ;
+}
+/*最新视频*/
+#videoMid1{
+    width: 100%;
+}
+#videoLogo1{
+    padding: 1rem;
+}
+#logoR1{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: rgb(255,101,92);
+    display: inline-block;
+    vertical-align: middle;
+
+}
+#logoR1 img{
+    width: 1.33rem;
+    margin: 0.3rem;
+}
+#videoLogo1 p{
+    display: inline-block;
+    font-size: 2rem;
+    vertical-align: middle;
+    color: rgb(126,126,126);
+    margin-left: 0.65rem;
+}
+#videoMid1List{
+    overflow: hidden;
+}
+#videoMid1List div{
+    float: left;
+    width: 46%;
+    margin: 2%;
+    position: relative;
+}
+#videoMid1List .img1{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -5.5rem;
+    margin-left: -2rem;
+}
+#videoMid1List div p{
+    font-size: 0.9rem;
+    color: rgb(176,176,176);
+}
+#videoMid1List div img{
+    width: 100%;
+}
+#videoMid1List a{
+    position: inherit;
+}
+/*英雄联盟游戏视频*/
+#videoMid p{
+    font-size:1.6rem;
+    color: black;
+    margin-left: 8px;
+}
+#vBoxlist div{
+    display: inline-block;
+   text-align: center;
+    padding:1rem;
+}
+#vBoxlist div p{
+    display: inline-block;
+    color:rgb(200,200,200);
+    font-size:1rem;
+}
+.listImg1{
+    width:1rem;
+    height: 1.2rem;
+    vertical-align: middle;
+}
+.listImg2,.listImg3{
+    width:1.8rem;
+    height: 1.4rem;
+    vertical-align: middle;
+}
+#lolVmid1{
+    overflow: hidden;
+}
+#lolVmid1 img{
+    width: 6rem;
+    padding: 0.5rem;
+}
+#lolVmid1 div{
+    float: left;
+}
+#lolVmid1 div h2{
+    font-size: 1.8rem;
+    line-height: 4rem;
+}
+#lolVmid1 div p{
+    font-size: 1.1rem;
+    color: rgb(250,187,184);
+}
+#lolVmid1 div button{
+    width: 7rem;
+    height: 3rem;
+    background-color: rgb(254,119,111);
+    margin-top: 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+    outline: none;
+    border:none;
+    border-radius: 6%;
+}
+#lolVmid2{
+    height:12px;
+    background-color: rgb(226,226,226);
+}
+#lolVmid3 div{
+    overflow: hidden;
+}
+#lolVmid3 .p1{
+    float: left;
+    margin: 0 1rem 0 1rem;
+    font-size: 2rem;
+    color: rgb(176,176,176);
+    line-height: 4rem;
+}
+#lolVmid3 .p2{
+    float: right;
+    margin: 0 1rem 0 1rem;
+    font-size: 1.4rem;
+    color: rgb(180,180,180);
+    line-height: 4rem;
+}
+/*更多视屏*/
+/*图片轮播*/
+.swiper-container{
+    border-top: 10px solid rgb(226,226,226);
+    border-bottom: 10px solid rgb(226,226,226);
+    overflow: hidden;
+}
+.swiper-wrapper img{
+    width: 100%;
+}
+#more{
+    padding-bottom: 4.5rem;
+}
+#moreVideo{
+    width: 100%;
+}
+#moreVideo1{
+    width: 94%;
+    height: 50px;
+    margin-left: 3%;
+    border-bottom:1px solid rgb(226,226,226);
+    display: flex;
+    justify-content: space-around;
+}
+#moreVideo1 div{
+    position: relative;
+}
+#moreVideo1 div p{
+    font-size: 1.6rem;
+    line-height: 50px;
+}
+#moreVideo1 div div{
+    position: absolute;
+    width: 5.4rem;
+    height: 3px;
+    background-color: rgb(217,39,39);
+    top: 49px;
+    display: none;
+}
+#videoMid2{
+    width: 92%;
+    margin-left: 3%;
+    box-sizing: border-box;
+}
+#videoMid2{
+    width: 100%;
+    padding-right: 10px;
+}
+#videoMid2 div img{
+    width: 40%;
+}
+#videoMid21,#videoMid22{
+    width: 100%;
+    border-bottom: 1px solid rgb(226,226,226);
+    padding: 15px 0px;
+}
+#videoMid211,#videoMid212{
+    width: 56%;
+    float: right;
+    font-size: 1.6rem;
+}
+#videoMid21 p,#videoMid22 p{
+    width: 95%;
+    color: rgb(138,138,138);
+}
+#videoMid211 div,#videoMid212 div{
+    width: 100%;
+    height: 10px;
+    margin-top: 0.7rem;
+    display: flex;
+    justify-content: space-around;
+}
+#videoMid211 div div{
+
+}
+#videoMid211 div div img,#videoMid212 div div img{
+    width:1.3rem;
+    height:1.2rem ;
+    margin-top: 0.1rem;
+}
+#videoMid211 div div span,#videoMid212 div div span{
+    font-size: 1rem;
+    color: rgb(138,138,138);
+}
+/*左边登录页面部分css*/
+#videoBox{
+    position: relative;
+    z-index: 80;
+}
+.login{
+    position: absolute;
+    left:-72%;
+    top:0;
+    width: 72%;
+    height: 500px;
+    margin-top: 2rem;
+}
+.loginContent{
+    width: 95%;
+    margin-right: 5%;
+    background-color: rgb(50,179,221);
+    border-radius: 0 10px  0 0;
+}
+.loginContent .loginImg{
+    width: 22%;
+    padding: 3.5rem 39%  1rem;
+}
+.loginContent .loginContentA{
+    width: 35%;
+    max-width:160px;
+    margin: 0 auto;
+}
+.loginContentA a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(119,122,139);
+    color: white;
+    font-size: 1.7rem;
+    padding: 0.3rem 0;
+}
+.loginContent .loginP{
+    margin-top: 2rem;
+    line-height: 5rem;
+    background-color: rgb(71,187,224);
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 200;
+    text-indent: 2rem;
+    margin-bottom: 2px;
+}
+.loginContentP{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(71,187,224);
+}
+.loginContentP img:nth-child(1){
+    width: 16%;
+    max-width:80px;
+    float: left;
+    padding: 1rem 1rem 0 2rem;
+}
+.loginContentP p{
+    float: left;
+    font-size: 1.4rem;
+    line-height: 5rem;
+    color: white;
+}
+.loginContentP img:nth-child(3){
+    float:right;
+    height: 1.3rem;
+    padding: 1.8rem ;
+}
+.loginAdd{
+    margin: 1rem 0 0 2rem;
+}
+.loginAdd a{
+    display:inline-block;
+    width:1.6rem ;
+    height: 1.6rem;
+    line-height: 1.4rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color:rgb(190,190,190);
+    font-size: 2.5rem;
+    color: #333333;
+}
+.loginAdd span{
+    font-size: 1.4rem;
+    color: lightgoldenrodyellow;
+    font-weight: 100;
+    line-height: 1.4rem;
+}
+.loginTu{
+    position: absolute;
+    bottom:5rem;
+    left:50%;
+}
+.loginTu a{
+    display: block;
+    border: 1px solid white;
+    width: 12rem;
+    font-size: 1.7rem;
+    padding: 0.2rem 0;
+    border-radius: 1.05rem;
+    font-weight: 100;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+@media screen and (max-width: 750px){
+    html{
+        font-size: 10px;
+    }
+}
+

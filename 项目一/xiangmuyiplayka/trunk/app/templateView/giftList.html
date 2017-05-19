@@ -1,0 +1,23 @@
+<div class="giftNav">
+    <img src="img/myImg/gift-1.png" alt="">
+    <p>我的礼包</p>
+</div>
+<div class="giftContent">
+    <ul ng-repeat="value in giftList" class="giftUl">
+       <p class="title">{{value.title}}</p>
+        <li>
+            <div class="div1">
+                <img src="{{value.imgSrc}}" alt="">
+            </div>
+            <div class="dateMa">
+                <div>{{value.date}}</div>
+                <div>{{value.ma}}</div>
+                <div>领取条件：连续签到15天</div>
+            </div>
+            <div class="div2">
+                <a href="###">复制</a>
+            </div>
+        </li>
+        <li class="useIt">{{value.useIt}}</li>
+    </ul>
+</div>

@@ -1,0 +1,52 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+/*html{font-size: 10px;}
+@media only screen and (max-width: 37.5em) {
+	html{font-size: 7px;}
+}*/
+a {text-decoration: none;}
+.shop{max-width: 750px; margin: 0 auto 120px; overflow: hidden; position: relative;}
+.shop .top{line-height: 3.4em; height: 3.4em; text-align: center;}
+.shop .top img{vertical-align: middle; width: 2rem; margin-top: 1rem;}
+.shop .top span,.shop .top a{color: #d92929;}
+.shop .top span{font-size: 1.7rem;display: inline}
+.shop .top a{font-size: 1.3rem;}
+.shop .top img,.shop .top a{position: absolute;}
+.shop .top img{left: 7%;}
+.shop .top a{right: 7%;}
+
+
+.shop .banner{position: relative; width: 100%;background-color: #e2e2e2; overflow: hidden;padding: 2% 0;}
+.shop .banner .owl-carousel img{width: 100%;}
+.shop .banner .owl-dots{position: absolute; bottom: 3rem;left: 50%;transform: translateX(-50%);}
+.shop .banner .owl-dots .owl-dot{display: inline-block;width: 1rem; height: 1rem;margin-left: 0.5rem; border:2px solid darkgray; background: red;border-radius: 100%;}
+.shop .banner .owl-dots .active{background: pink}
+
+
+.info{width: 100%; padding: 2% 0;overflow: hidden;  display: block;}
+.info ul{width: 100%;overflow: hidden;}
+.info ul li{margin: 0; padding: 0;cursor: pointer; text-align: center; margin-left: 4%; list-style: none; float: left;width: 20%;}
+.info ul li img,.info ul li span{display: block; width: 100%;height: auto; font-size: 1.5rem;color: #5a5a5a;}
+.info ul li span{margin-top: 1em;}
+.info .ul-block li {margin-left: 4%;font-size: 1.1rem; line-height: 250%;}
+.info .ul-block li h2{font-size: 1.7rem;margin-top: 10%;}
+.info .ul-block li:nth-child(2){width: 50%; text-align: left; color: #f46259;}
+.info .ul-block li:nth-child(3){width: 14%;}
+.info .ul-block li:nth-child(3) button{display: block;width: 100%;margin-top: 60%;font-size: 1.7rem; color: white; background: #fe776f;padding: 0.5rem 0;}
+
+
+h2{font-family: "微软雅黑"; color: #333333; font-size: 1.6rem;}
+.hot{padding: 0 6.6%;}
+.hot ul{width: 100%; margin: 1em 0; padding: 0;}
+.hot ul:after{content: "";display: block;clear: both;visibility: hidden;height: 0;}
+.hot ul li{margin: 0; padding: 0; float: left; list-style: none; width: 46%;overflow: hidden;}
+.hot ul li:nth-child(1){ margin-right: 8%;}
+.hot ul li img{width: 100%;height: 90%;}
+.hot ul li p,.hot ul li a{text-overflow: ellipsis; white-space: nowrap;overflow: hidden;}
+.hot ul li p{text-align: left; font-size: 1.2rem;padding: 0.5em 0;}
+.hot ul li a{position: inherit; display: block;width: 100%; background-color: #fe776f;font-size: 1.5rem;padding: 0.5em 0; letter-spacing: 0.3em; text-align: center;color: white;border-radius: 5px;}
+
