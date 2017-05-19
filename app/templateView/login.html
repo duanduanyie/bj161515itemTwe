@@ -5,7 +5,7 @@
     <title>会员注册</title>
     <!--<link rel="stylesheet" href="../lib/bootstrap.css">-->
     <link rel="stylesheet" href="../css/register.css">
-    <script src="../lib/angular.min.js">会员注册</script>
+    <script src="../lib/angular.min.js"></script>
 </head>
 <body>
 <!--1-->
@@ -28,7 +28,7 @@
 <div id="register_top">
     <div id="register_topS">
         <a href="###" id="register_topLo"><img src="../images/register/logo.png"></a>
-        <div id="register_topRes"></div>
+        <div id="register_topRes">会员登录</div>
     </div>
 </div>
 <!--3-->
@@ -36,7 +36,7 @@
     <div id="register_midS">
         <img src="../images/register/bac.png" id="register_midL">
         <div id="register_midR">
-            <div class="register_midTop">注册<span id="isExist"></span></div>
+            <div class="register_midTop">登录<span id="isExist"></span></div>
             <div class="register_midIpt">
                 <input type="text" placeholder="请输入手机号"id="register_ipt1">
                 <span class="correctS">✅</span>
@@ -47,22 +47,10 @@
                 <span class="correctS">✅</span>
             </div>
             <div class="register_midErr"></div>
-            <div class="register_midIpt">
-                <input type="password" placeholder="请再次输入密码确认"id="register_ipt3">
-                <span class="correctS">✅</span>
-            </div>
-            <div class="register_midErr"></div>
             <div id="register_midCode">
                 <input type="text" placeholder="验证码"id="register_ipt4">
                 <a href="###" class="register_midRand randClick"></a>
                 <a href="###" class="randClick randClick2">看不清，换一张</a>
-            </div>
-            <div class="register_midErr"></div>
-            <div class="register_midIpt getCode">
-                <input type="text" placeholder="手机验证码">
-                <div id="getCodeS">
-                    <a href="###">获取验证码</a>
-                </div>
             </div>
             <div class="register_midErr"></div>
             <div id="register_midRead">
@@ -73,7 +61,7 @@
             </div>
             <div class="midBtn">
                 <button class="midBtn1 midBtnPub">登录</button>
-                <button class="midBtn2 midBtnPub">会员注册</button>
+                <button class="midReg midBtnPub"><a href="register.html">会员注册</a></button>
             </div>
             <div id="register_midFoot">
                 <div class="midCoopL">用户合作网站登录</div>

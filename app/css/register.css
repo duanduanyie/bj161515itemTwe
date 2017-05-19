@@ -179,10 +179,13 @@ a{
     background-color:#ea5000;
     transition-duration:1s;
 }
-.midBtn2{
+.midReg,.midBtn2{
     background-color: #008ce1;
 }
-.midBtn2:hover{
+.midReg a{
+    color: white;
+}
+.midReg:hover,.midBtn2:hover{
     background-color:#005ce1;
     transition-duration:1s;
 }
@@ -310,6 +313,141 @@ a{
 }
 
 
+/*商家登录*/
+#bl_top{
+    background-color: #eeeeee;
+    padding: 0.6rem;
+    font-family: Arial,Verdana,"Microsoft Yahei";
+}
+#bl_topS{
+    width:73.75rem;
+    margin:0 auto;
+    overflow: hidden;
+    color: #666;
+    font-size:0.7rem;
+}
+#bl_top_left{
+    float: left;
+}
+#bl_top_right{
+    float: right;
+}
+#bl_top_left a,#bl_top_right a{
+    color: #666;
+    font-size:0.75rem;
+}
+#bl_logo{
+    padding:1.69rem 0;
+}
+#bl_logoS{
+    width:73.75rem;
+    margin:0 auto;
+    overflow: hidden;
+    height:5rem;
+    line-height: 5rem;
+}
+#bl_logoS a{
+    display: inline-block;
+    width:10rem;
+    padding-right:1.25rem;
+    margin-right:1.875rem;
+    border-right:1px solid #d3d3d3;
+    float: left;
+}
+#bl_logoBus{
+    float: left;
+    font-size: 1.625rem;
+    color: #999;
+    font-family: Arial,Verdana,"Microsoft Yahei";
+}
+/*bl_mid*/
+#bl_mid{
+    background-color: #008ce1;
+    padding:2.5rem;
+}
+#bl_midS{
+    width:73.75rem;
+    margin:0 auto;
+    overflow: hidden;
+}
+#bl_midS input{
+    background-color:#f9f9f9;
+    border:1px solid #d3d3d3;
+    font-family: "Microsoft Yahei";
+    outline: none;
+}
+#bl_mid_left{
+    float: left;
+    margin-left:5rem;
+}
+#bl_mid_right{
+    float: right;
+    padding:1.25rem 1.875rem;
+    background-color: white;
+}
+#bl_mid_right1{
+    color: #999;
+    font-size:1.5rem;
+    font-family: Arial,Verdana,"Microsoft Yahei";
+    margin-bottom: 1.25rem;
+}
+.bl_mid_ipt{
+    width:100%;
+    padding:0.6rem 0.8rem;
+    box-sizing: border-box;
+}
+.bl_Err{
+    height:1.5rem;
+}
+.bl_mid_ipt3{
+    width:6rem;
+    padding:0.5rem 0.8rem;
+    box-sizing: border-box;
+}
+.bl_code{
+    width:6rem;
+    display: inline-block;
+    border:1px solid black;
+    box-sizing: border-box;
+    margin-left:1.25rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    padding:0.3rem;
+    color: black;
+    font-weight: bolder;
+}
+.bl_vague{
+    color: #ff6c00;
+    font-size: 0.9rem;
+    margin-left:0.2rem;
+}
+.bl_forget{
+    text-align: right;
+}
+.bl_forget a{
+    line-height: 2.4rem;
+    color: #ff6c00;
+    text-decoration: underline;
+    font-size: 0.75rem;
+}
+.bl_mid_login{
+    text-align: center;
+    margin: 1rem 0;
+}
+.bl_mid_login button{
+    padding:0.5rem 1.3rem;
+    background-color: #ec6917;
+    border:none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.bl_mid_login button:hover{
+    background-color: #ec5000;
+    transition-duration: 1s;
+}
 
 
 

@@ -2,7 +2,6 @@
  * Created by lanou3g on 17/5/9.
  */
 //正则验证
-$("#register_topRes").html("会员注册");
 $("#register_ipt1").blur(function(){
     var reg = /^1[3578][0-9]{9}$/g;
     var result = reg.test($("#register_ipt1").val());
@@ -65,9 +64,22 @@ $(".randClick").click(function () {
 });
 //登录
 $(".midBtn1").click(function(){
-    if ($("#register_ipt1").val().length == 0 || $("#register_ipt2").val().length == 0 || $("#register_ipt2").val() != $("#register_ipt3").val()) {
+    if ($("#register_ipt1").val().length == 0 || $("#register_ipt2").val().length == 0) {
         return;
     }
+    if ($("#register_ipt4").val()) {
+        if ($("#register_ipt4").val() == $(".register_midRand").html()) {
+            $(".register_midErr").eq(3).html("✅");
+            login();
+        } else {
+            $(".register_midErr").eq(3).html("看准了再输入");
+        }
+    }
+    else {
+        $(".register_midErr").eq(3).html("请输入验证码");
+    }
+});
+function login(){
     $.get({
         type:"GET",
         url:"../PHP/login.php",
@@ -85,14 +97,14 @@ $(".midBtn1").click(function(){
                 var userJson=JSON.stringify(userInfo);
                 localStorage.users=userJson;
                 console.log(localStorage.users);
-                window.location.href="loginSuc.html";
+                window.location.href="business.html";
             }
         },
         fail:function(err){
             console.log("错误信息"+err);
         }
     });
-});
+}
 //Ajax请求数据库，唯一注册
 $(".midBtn2").click(function () {
     if ($("#register_ipt1").val().length == 0 || $("#register_ipt2").val().length == 0 || $("#register_ipt2").val() != $("#register_ipt3").val()) {
@@ -132,7 +144,7 @@ $(".midBtn2").click(function () {
                     localStorage.user = userJson;
                     console.log(localStorage.user);
                     // 跳转到成功注册的界面
-                    window.location.href = "regSuc.html";
+                    window.location.href = "business.html";
                 } else {
                     alert("该用户已经注册过了");
                 }
