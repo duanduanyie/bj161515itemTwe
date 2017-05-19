@@ -34,24 +34,27 @@ $(".carouselNav_list0 li").mouseover(function () {
 });
 
 //订单
-
-
-$("#order").click(function(){
+function isExist(){
     if(localStorage.users){
         var user=JSON.parse(localStorage.users);
         var user2=JSON.parse(user.user);
-        if(user2.username){
+        if(user2.username) {
             $("#alLo").html(user2.username);
             $("#noEx").html("<a href='###'>退出</a>").click(function(){
                 localStorage.clear();
                 $("#alLo").html("<a href='login.html'>登录</a>");
                 $("#noEx").html("<a href='register.html'>注册</a>");
             });
-        }else{
-            location.href="login.html";
         }
     }
-
+}
+isExist();
+$("#order").click(function(){
+    if(localStorage.users){
+        isExist();
+    }else{
+        location.href="login.html";
+    }
 });
 
 
