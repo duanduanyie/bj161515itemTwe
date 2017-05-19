@@ -1,180 +1,47 @@
-<!--导航栏, 搜索框-->
-<div class="head">
-    <div class="site-nav">
-        <div class="head-body v">
-            <div class="select-city fl">
-                所在城市 :
-                <a class="curr" href="">北京 <img class="down-arrow" src="images/home-page/jiantou.png" alt=""></a>
-            </div>
-            <ul class="quick-menu fr">
-                <li>
-                    <a class="menu user" href="">登录</a>
-                </li>
-                <li>
-                    <a class="menu" href="">注册</a>
-                </li>
-                <li class="spacer">|</li>
-                <li>
-                    <a class="menu" href="">我的订单</a>
-                </li>
-                <li class="spacer">|</li>
-                <li>
-                    <a class="menu" href="">我的消息</a>
-                </li>
-                <li class="spacer">|</li>
-                <li>
-                    <a class="menu" href="">我是商家</a>
-                </li>
-                <li class="spacer">|</li>
-                <li>
-                    <a class="menu" href="">400-100-0907</a>
-                </li>
-            </ul>
-        </div>
-    </div><!--site-nav-->
-    <div class="head-extra v">
-        <a class="logo fl" href="">
-            <img src="images/home-page/home-logo.png" alt="">
-        </a>
-        <div class="search fl">
-            <ul class="search-class">
-                <li class="active shop">
-                    <a href="">商家</a>
-                </li>
-                <li class="goods">
-                    <a href="">商品</a>
-                </li>
-            </ul>
-            <div class="search-area">
-                <input class="keywords" type="text">
-                <button><img class="search-btn" src="images/home-page/search.png" alt=""></button>
-            </div>
-            <ul class="hot-keywords">
-                <li><span>热门 : </span></li>
-                <li class="searchShop">
-                    <a href="">酒店</a>
-                </li>
-                <li class="searchShop">
-                    <a href="">洗车</a>
-                </li>
-                <li class="searchShop">
-                    <a href="">餐饮</a>
-                </li>
-                <li class="searchGoods">
-                    <a href="">进口</a>
-                </li>
-                <li class="searchGoods">
-                    <a href="">旅游</a>
-                </li>
-                <li class="searchGoods">
-                    <a href="">如家</a>
-                </li>
-            </ul>
-        </div>
-        <ul class="wrap fr">
-            <a href="">
-                <li>
-                    <img class="user" src="images/home-page/icon.png" alt="">
-                    我的易和
-                    <img class="down-arrow2" src="images/home-page/triangle.png" alt="">
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <img class="shop-car" src="images/home-page/shop-car.png" alt="">
-                    购物车
-                    <img class="down-arrow2" src="images/home-page/triangle.png" alt="">
-                </li>
-            </a>
-        </ul>
-    </div><!--head-extra-->
-    <div class="head-nav">
-        <div class="v">
-            <div id="all-class" class="all-class">
-                行业分类
-                <img src="images/home-page/jian.png" alt="">
-            </div>
-            <ul class="nav">
-                <li><a href="">首页</a></li>
-                <li><a href="templateView/business.html" style="color: #f60;">精选品牌</a></li>
-                <li><a href="templateView/special.html">今日特价</a></li>
-                <li><a href="templateView/integral.html">积分商城</a></li>
-                <li><a href="templateView/add.html">加入易和</a></li>
-                <li class="online">
-                    <a href="">在线客服</a>
-                    <div class="server">
-                        <div class="curr"></div>
-                        <a class="qq-server" href="">
-                            <img src="images/home-page/qq.png" alt="">
-                            QQ客服1
-                        </a>
-                        <a class="qq-server" href="">
-                            <img src="images/home-page/qq.png" alt="">
-                            QQ客服2
-                        </a>
-                        <a class="qq-server" href="">
-                            <img src="images/home-page/qq.png" alt="">
-                            QQ客服3
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div><!--head-nav-->
-</div><!--head-->
-<!--轮播图-->
-<div class="banner">
-    <div class="index-banner">
-        <div class="swiper-container banner-container swiper-container-horizontal" style="margin:0 auto;width: 100%;!important;">
-            <div class="swiper-wrapper ">
-
-                <div class="swiper-slide slide" style="background: rgb(0, 51, 153); width: 1454px;" >
-                    <a href=""><img src="images/home-page/bj1.jpg" alt=""></a>
-                </div>
-                <div class="swiper-slide slide" style="background: rgb(0, 51, 153); width: 1454px;" >
-                    <a href=""><img src="images/home-page/bj2.jpg" alt=""></a>
-                </div>
-                <div class="swiper-slide slide" style="background: rgb(0, 51, 153); width: 1454px;" >
-                    <a href=""><img src="images/home-page/bj3.jpg" alt=""></a>
-                </div>
-                <div class="swiper-slide slide" style="background: rgb(0, 51, 153); width: 1454px;" >
-                    <a href=""><img src="images/home-page/bj4.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-                <span class="swiper-pagination-bullet"></span>
-                <span class="swiper-pagination-bullet"></span>
-                <span class="swiper-pagination-bullet"></span>
-                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-            </div>
-        </div>
-
-    </div>
-</div><!--banner-->
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>易和生活港｜精品商家</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/foot.css">
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/angular.min.js"></script>
+    <script src="../js/controllors.js"></script>
+    <script src="../lib/angular-route.min.js"></script>
+    <script src="../js/appD.js"></script>
+    <link rel="stylesheet" href="../lib/swiper.min.css">
+    <script src="../lib/swiper.min.js"></script>
+</head>
+<body>
+<div>
+    <div ng-include="'nav.html'"></div>
+</div>
 
 <!--主要内容区域-->
-<div class="body">
+<div  ng-controller="homeC" class="body">
     <!--轮播图下面广告-->
     <div class="four-ad">
         <ul class="ad-list">
             <li>
                 <a href="">
-                    <img src="images/home-page/sImg-1.png" alt="">
+                    <img src="../images/home-page/sImg-1.png" alt="">
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="images/home-page/sImg-2.png" alt="">
+                    <img src="../images/home-page/sImg-2.png" alt="">
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="images/home-page/sImg-3.png" alt="">
+                    <img src="../images/home-page/sImg-3.png" alt="">
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="images/home-page/sImg-4.png" alt="">
+                    <img src="../images/home-page/sImg-4.png" alt="">
                 </a>
             </li>
         </ul>
@@ -190,7 +57,7 @@
         </div>
         <div class="content">
             <a href="" class="ad-state1">
-                <img src="images/home-page/sift-1.png" alt="">
+                <img src="../images/home-page/sift-1.png" alt="">
             </a>
             <ul class="ad-group">
                 <li ng-repeat="src in sift">
@@ -205,7 +72,7 @@
     <div class="classify" id="cla1">
         <div class="marks">
             <div class="marks-nav">
-                <h4 class="titles"><img src="images/home-page/logo.png" alt="">汽车装饰</h4>
+                <h4 class="titles"><img src="../images/home-page/logo.png" alt="">汽车装饰</h4>
                 <ul class="small-nav">
                     <li class="item">汽车美容</li>
                     <li class="item">汽车装饰</li>
@@ -216,7 +83,7 @@
         </div>
         <div class="content">
             <a href="" class="ad-state3">
-                <img src="images/home-page/decorate-1.png" alt="">
+                <img src="../images/home-page/decorate-1.png" alt="">
             </a>
             <div class="goods-list">
                 <ul class="active">
@@ -226,9 +93,9 @@
                                 <img ng-src={{src}} alt="">
                             </a>
                             <div class="info-list">
-                                <p><img src="images/home-page/icon.png" alt="">李杰</p>
-                                <p><img src="images/home-page/phone.png" alt="">18699563265</p>
-                                <p><img src="images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
+                                <p><img src="../images/home-page/icon.png" alt="">李杰</p>
+                                <p><img src="../images/home-page/phone.png" alt="">18699563265</p>
+                                <p><img src="../images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
                             </div>
                         </div>
                     </li>
@@ -241,9 +108,9 @@
                                 <img ng-src={{src}} alt="">
                             </a>
                             <div class="info-list">
-                                <p><img src="images/home-page/icon.png" alt="">李杰</p>
-                                <p><img src="images/home-page/phone.png" alt="">18699563265</p>
-                                <p><img src="images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
+                                <p><img src="../images/home-page/icon.png" alt="">李杰</p>
+                                <p><img src="../images/home-page/phone.png" alt="">18699563265</p>
+                                <p><img src="../images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
                             </div>
                         </div>
                     </li>
@@ -255,9 +122,9 @@
                                 <img ng-src={{src}} alt="">
                             </a>
                             <div class="info-list">
-                                <p><img src="images/home-page/icon.png" alt="">李杰</p>
-                                <p><img src="images/home-page/phone.png" alt="">18699563265</p>
-                                <p><img src="images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
+                                <p><img src="../images/home-page/icon.png" alt="">李杰</p>
+                                <p><img src="../images/home-page/phone.png" alt="">18699563265</p>
+                                <p><img src="../images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
                             </div>
                         </div>
                     </li>
@@ -266,14 +133,14 @@
         </div>
         <div class="width-ad">
             <a href="">
-                <img src="images/home-page/width-ad.png" alt="">
+                <img src="../images/home-page/width-ad.png" alt="">
             </a>
         </div>
     </div>
     <div class="classify" id="cla2">
         <div class="marks">
             <div class="marks-nav">
-                <h4 class="titles"><img src="images/home-page/hotel-logo.png" alt="">精品酒店</h4>
+                <h4 class="titles"><img src="../images/home-page/hotel-logo.png" alt="">精品酒店</h4>
                 <ul class="small-nav">
                     <li class="item">魅力三亚</li>
                     <li class="item">海景套房</li>
@@ -284,7 +151,7 @@
         </div>
         <div class="content">
             <a href="" class="ad-state3">
-                <img src="images/home-page/hotel-1.png" alt="">
+                <img src="../images/home-page/hotel-1.png" alt="">
             </a>
             <div class="goods-list">
                 <ul class="active">
@@ -294,9 +161,9 @@
                                 <img ng-src={{src}} alt="">
                             </a>
                             <div class="info-list">
-                                <p><img src="images/home-page/icon.png" alt="">李杰</p>
-                                <p><img src="images/home-page/phone.png" alt="">18699563265</p>
-                                <p><img src="images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
+                                <p><img src="../images/home-page/icon.png" alt="">李杰</p>
+                                <p><img src="../images/home-page/phone.png" alt="">18699563265</p>
+                                <p><img src="../images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
                             </div>
                         </div>
                     </li>
@@ -309,9 +176,9 @@
                                 <img ng-src={{src}} alt="">
                             </a>
                             <div class="info-list">
-                                <p><img src="images/home-page/icon.png" alt="">李杰</p>
-                                <p><img src="images/home-page/phone.png" alt="">18699563265</p>
-                                <p><img src="images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
+                                <p><img src="../images/home-page/icon.png" alt="">李杰</p>
+                                <p><img src="../images/home-page/phone.png" alt="">18699563265</p>
+                                <p><img src="../images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
                             </div>
                         </div>
                     </li>
@@ -323,9 +190,9 @@
                                 <img ng-src={{src}} alt="">
                             </a>
                             <div class="info-list">
-                                <p><img src="images/home-page/icon.png" alt="">李杰</p>
-                                <p><img src="images/home-page/phone.png" alt="">18699563265</p>
-                                <p><img src="images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
+                                <p><img src="../images/home-page/icon.png" alt="">李杰</p>
+                                <p><img src="../images/home-page/phone.png" alt="">18699563265</p>
+                                <p><img src="../images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
                             </div>
                         </div>
                     </li>
@@ -334,14 +201,14 @@
         </div>
         <div class="width-ad">
             <a href="">
-                <img src="images/home-page/width-ad2.png" alt="">
+                <img src="../images/home-page/width-ad2.png" alt="">
             </a>
         </div>
     </div>
     <div class="classify" id="cla3">
         <div class="marks">
             <div class="marks-nav">
-                <h4 class="titles"><img src="images/home-page/clothing-logo.png" alt="">服装</h4>
+                <h4 class="titles"><img src="../images/home-page/clothing-logo.png" alt="">服装</h4>
                 <ul class="small-nav">
                     <li class="item">精品男装</li>
                     <li class="item">精品女装</li>
@@ -352,7 +219,7 @@
         </div>
         <div class="content">
             <a href="" class="ad-state3">
-                <img src="images/home-page/clothing-1.png" alt="">
+                <img src="../images/home-page/clothing-1.png" alt="">
             </a>
             <div class="goods-list">
                 <ul class="active">
@@ -362,9 +229,9 @@
                                 <img ng-src={{src}} alt="">
                             </a>
                             <div class="info-list">
-                                <p><img src="images/home-page/icon.png" alt="">李杰</p>
-                                <p><img src="images/home-page/phone.png" alt="">18699563265</p>
-                                <p><img src="images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
+                                <p><img src="../images/home-page/icon.png" alt="">李杰</p>
+                                <p><img src="../images/home-page/phone.png" alt="">18699563265</p>
+                                <p><img src="../images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
                             </div>
                         </div>
                     </li>
@@ -377,9 +244,9 @@
                                 <img ng-src={{src}} alt="">
                             </a>
                             <div class="info-list">
-                                <p><img src="images/home-page/icon.png" alt="">李杰</p>
-                                <p><img src="images/home-page/phone.png" alt="">18699563265</p>
-                                <p><img src="images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
+                                <p><img src="../images/home-page/icon.png" alt="">李杰</p>
+                                <p><img src="../images/home-page/phone.png" alt="">18699563265</p>
+                                <p><img src="../images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
                             </div>
                         </div>
                     </li>
@@ -391,9 +258,9 @@
                                 <img ng-src={{src}} alt="">
                             </a>
                             <div class="info-list">
-                                <p><img src="images/home-page/icon.png" alt="">李杰</p>
-                                <p><img src="images/home-page/phone.png" alt="">18699563265</p>
-                                <p><img src="images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
+                                <p><img src="../images/home-page/icon.png" alt="">李杰</p>
+                                <p><img src="../images/home-page/phone.png" alt="">18699563265</p>
+                                <p><img src="../images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
                             </div>
                         </div>
                     </li>
@@ -402,14 +269,14 @@
         </div>
         <div class="width-ad">
             <a href="">
-                <img src="images/home-page/width-ad3.png" alt="">
+                <img src="../images/home-page/width-ad3.png" alt="">
             </a>
         </div>
     </div>
     <div class="classify" id="cla4">
         <div class="marks">
             <div class="marks-nav">
-                <h4 class="titles"><img src="images/home-page/building.png" alt="">建材</h4>
+                <h4 class="titles"><img src="../images/home-page/building.png" alt="">建材</h4>
                 <ul class="small-nav">
                     <li class="item">装修定制</li>
                     <li class="item">五金电工</li>
@@ -420,7 +287,7 @@
         </div>
         <div class="content">
             <a href="" class="ad-state3">
-                <img src="images/home-page/build-1.png" alt="">
+                <img src="../images/home-page/build-1.png" alt="">
             </a>
             <div class="goods-list">
                 <ul class="active">
@@ -430,9 +297,9 @@
                                 <img ng-src={{src}} alt="">
                             </a>
                             <div class="info-list">
-                                <p><img src="images/home-page/icon.png" alt="">李杰</p>
-                                <p><img src="images/home-page/phone.png" alt="">18699563265</p>
-                                <p><img src="images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
+                                <p><img src="../images/home-page/icon.png" alt="">李杰</p>
+                                <p><img src="../images/home-page/phone.png" alt="">18699563265</p>
+                                <p><img src="../images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
                             </div>
                         </div>
                     </li>
@@ -445,9 +312,9 @@
                                 <img ng-src={{src}} alt="">
                             </a>
                             <div class="info-list">
-                                <p><img src="images/home-page/icon.png" alt="">李杰</p>
-                                <p><img src="images/home-page/phone.png" alt="">18699563265</p>
-                                <p><img src="images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
+                                <p><img src="../images/home-page/icon.png" alt="">李杰</p>
+                                <p><img src="../images/home-page/phone.png" alt="">18699563265</p>
+                                <p><img src="../images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
                             </div>
                         </div>
                     </li>
@@ -459,9 +326,9 @@
                                 <img ng-src={{src}} alt="">
                             </a>
                             <div class="info-list">
-                                <p><img src="images/home-page/icon.png" alt="">李杰</p>
-                                <p><img src="images/home-page/phone.png" alt="">18699563265</p>
-                                <p><img src="images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
+                                <p><img src="../images/home-page/icon.png" alt="">李杰</p>
+                                <p><img src="../images/home-page/phone.png" alt="">18699563265</p>
+                                <p><img src="../images/home-page/location.png" alt="">浙江省台州市温岭市人民西路281号</p>
                             </div>
                         </div>
                     </li>
@@ -470,7 +337,7 @@
         </div>
         <div class="width-ad">
             <a href="">
-                <img src="images/home-page/width-ad4.png" alt="">
+                <img src="../images/home-page/width-ad4.png" alt="">
             </a>
         </div>
     </div><!--classify-->
@@ -478,34 +345,34 @@
     <div class="sidebar">
         <ul>
             <li>
-                <a href="#cla1" onclick="huadong($(this))"><span>1&nbsp&nbspF</span>汽车</a>
+                <a href1="#cla1" onclick="huadong($(this))"><span>1&nbsp&nbspF</span>汽车</a>
             </li>
             <li>
-                <a href="#cla2" onclick="huadong($(this))"><span>2&nbsp&nbspF</span>酒店</a>
+                <a href1="#cla2" onclick="huadong($(this))"><span>2&nbsp&nbspF</span>酒店</a>
             </li>
             <li>
-                <a href="#cla3" onclick="huadong($(this))"><span>3&nbsp&nbspF</span>服装</a>
+                <a href1="#cla3" onclick="huadong($(this))"><span>3&nbsp&nbspF</span>服装</a>
             </li>
             <li>
-                <a href="#cla4" onclick="huadong($(this))"><span>4&nbsp&nbspF</span>建材</a>
+                <a href1="#cla4" onclick="huadong($(this))"><span>4&nbsp&nbspF</span>建材</a>
             </li>
         </ul>
         <ul class="bottom">
             <li>
-                <a href="#top" onclick="huadong($(this))">
-                    <img src="images/home-page/cb_01.jpg" alt="">
+                <a href1="#top" onclick="huadong($(this))">
+                    <img src="../images/home-page/cb_01.jpg" alt="">
                     <span>顶部</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="images/home-page/cb_02.jpg" alt="">
+                    <img src="../images/home-page/cb_02.jpg" alt="">
                     <span>反馈</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="images/home-page/cb_03.jpg" alt="">
+                    <img src="../images/home-page/cb_03.jpg" alt="">
                     <span>问题</span>
                 </a>
             </li>
@@ -513,112 +380,9 @@
     </div><!--sidebar-->
 </div>
 
-<!--footer-->
-<div class="foot">
-    <div class="top">
-        <ul class="v">
-            <a href="">
-                <li class="item">
-                    <img src="images/home-page/foot1.png" alt="">
-                    正品保障
-                </li>
-            </a>
-            <a href="">
-                <li class="item">
-                    <img src="images/home-page/foot2.png" alt="">
-                    全程跟踪
-                </li>
-            </a>
-            <a href="">
-                <li class="item">
-                    <img src="images/home-page/foot3.png" alt="">
-                    客户监督
-                </li>
-            </a>
-            <a href="">
-                <li class="item">
-                    <img src="images/home-page/foot4.png" alt="">
-                    售后无休
-                </li>
-            </a>
-            <a href="">
-                <li class="item">
-                    <img src="images/home-page/foot5.png" alt="">
-                    准时送达
-                </li>
-            </a>
-        </ul>
-    </div>
-    <div class="center">
-        <div class="v">
-            <a class="logo" href="">
-                <img src="images/home-page/footer_logo.png" alt="">
-            </a>
-            <div class="qrcode">
-                <div class="ele">
-                    <img src="images/home-page/ele.png" alt="">
-                </div>
-                <div class="ele">
-                    <img src="images/home-page/ele.png" alt="">
-                </div>
-                <div class="text">
-                    <span class="item">
-                        <img src="images/home-page/we.png" alt="">
-                        Android下载
-                    </span>
-                    <span class="item">
-                        <img src="images/home-page/phone.png" alt="">
-                        IOS下载
-                    </span>
-                </div>
-            </div>
-            <ul class="foot-nav">
-                <li>
-                    <h1>
-                        <a href="">关于易和</a>
-                    </h1>
-                    <h3>
-                        <a href="">新用户注册</a>
-                    </h3>
-                    <h3>
-                        <a href="">在线下单</a>
-                    </h3>
-                    <h3>
-                        <a href="">支付方式</a>
-                    </h3>
-                </li>
-                <li>
-                    <h1>
-                        <a href="">配送说明</a>
-                    </h1>
-                    <h3><a href="">运费说明</a></h3>
-                    <h3><a href="">配送方式</a></h3>
-                    <h3><a href="">发票说明</a></h3>
-                </li>
-                <li>
-                    <h1><a href="">售后服务</a></h1>
-                    <h3><a href="">退换货规则</a></h3>
-                    <h3><a href="">服务保障承诺</a></h3>
-                    <h3><a href="">验货与签收</a></h3>
-                </li>
-                <li>
-                    <h1><a href="">加盟易和</a></h1>
-                    <h3><a href="">加盟条款</a></h3>
-                    <h3><a href="">公司简介</a></h3>
-                    <h3><a href="">服务协议</a></h3>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="bottom">
-        <div class="ele1">版权所有 © 2016易和生活港 保留所有权利 | 鲁ICP备：16022180号-1</div>
-        <div class="ele2">
-            易和生活 众享品质
-            <h5>
-                <a href="">北京澳环科技提供技术支持</a>
-            </h5>
-        </div>
-    </div>
+<!--footer部分-->
+<div ng-controller="footerC">
+    <div ng-include="'footer.html'"></div>
 </div>
 
 
@@ -630,8 +394,9 @@
         loop: true,
         width : window.innerWidth,
         pagination :'.swiper-pagination',
-        paginationClickable:true
+        paginationClickable:true,
     });
+
     //内容slider部分JS
     (function(list){
         $(".item",list).mouseover(function(){
@@ -646,8 +411,10 @@
             $("ul",currView).eq(_i).siblings().removeClass("active");
         });
     }($(".small-nav")));
-    //回到顶部JS
 
+
+
+    //回到顶部JS
     $(window).scroll(function() {
         var sTop = $(window).scrollTop();
         if (sTop > 1300) {
@@ -658,7 +425,7 @@
     });
 
     function huadong(obj) {
-        var href = $(obj).attr("href");
+        var href = $(obj).attr("href1");
         var pos = $(href).offset().top;
         curCss(obj);
         $("html,body").stop().animate({ scrollTop: pos }, 800);
@@ -671,3 +438,5 @@
 
 
 </script>
+</body>
+</html>
