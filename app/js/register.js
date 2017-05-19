@@ -97,7 +97,7 @@ function login(){
                 var userJson=JSON.stringify(userInfo);
                 localStorage.users=userJson;
                 console.log(localStorage.users);
-                window.location.href="loginSuc.html";
+                window.location.href="business.html";
             }
         },
         fail:function(err){
@@ -144,7 +144,7 @@ $(".midBtn2").click(function () {
                     localStorage.user = userJson;
                     console.log(localStorage.user);
                     // 跳转到成功注册的界面
-                    window.location.href = "regSuc.html";
+                    window.location.href = "business.html";
                 } else {
                     alert("该用户已经注册过了");
                 }
