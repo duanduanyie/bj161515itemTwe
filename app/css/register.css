@@ -179,10 +179,13 @@ a{
     background-color:#ea5000;
     transition-duration:1s;
 }
-.midBtn2{
+.midReg,.midBtn2{
     background-color: #008ce1;
 }
-.midBtn2:hover{
+.midReg a{
+    color: white;
+}
+.midReg:hover,.midBtn2:hover{
     background-color:#005ce1;
     transition-duration:1s;
 }
