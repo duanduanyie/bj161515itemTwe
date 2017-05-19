@@ -88,7 +88,7 @@ function login(){
             password: $("#register_ipt2").val()
         },
         success:function(res){
-            $("#isExist").html("用户未注册");
+            $("#isExist").html("账号或者密码错误");
             console.log(res);
             var userInfo=JSON.parse(res);
             console.log(userInfo);
