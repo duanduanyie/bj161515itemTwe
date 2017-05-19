@@ -83,8 +83,7 @@ controllersModule.controller("integralC", function ($scope) {
 
 //footerD控制器
 controllersModule.controller("footerC", function ($scope) {
-    var pp = document.querySelectorAll(".foot-nav a");
-    console.log(pp)
+
 });
 
 
